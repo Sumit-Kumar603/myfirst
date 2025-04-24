@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Restaurant</title>
+
+<style>
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    text-align: left;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+header {
+    background-color: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+}
+
+header:hover {
+    font-weight: bolder;
+    text-shadow: 2px;
+}
+
+nav {
+    background-color: #f06229;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #e64a19;
+    border: 1px solid blue;
+    border-radius: 2px;
+    animation-delay: 1s;
+    animation: infinite;
+    color: darkblue;
+    font-weight: bolder;
+    background-color: red;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+.hero {
+    background-image: url(E:\backgruo.jpeg);
+    height: 700px;
+    width: 100%;
+    border: 2px solid red;
+    background-size: auto;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.inhero1 {
+    height: 700px;
+    width: 100%;
+    border: 2px solid #d32f2f;
+    justify-content: space-around;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('blurresto.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.name {
+    height: 300px;
+    max-width: 880px;
+    margin-top: 35px;
+    color: rgb(247, 247, 6);
+    padding-left: 30px;
+    margin-left: 5px;
+    font-size: 40px;
+    font-weight: bolder;
+    max-height: 400px;
+}
+
+.name span {
+    font-size: 50px;
+    color: #ebece4;
+}
+
+.imagediv {
+    display: flex;
+    height: 300px;
+    width: 260px;
+    border: 5px solid red;
+    margin-top: 200px;
+    margin-left: 20px;
+    align-items: center;
+    justify-items: center;
+    background-color: maroon;
+    border-radius: 2%;
+    box-shadow: 2px 2px 23px 23px rgb(41, 225, 4);
+    justify-content: space-between;
+}
+
+.myimage {
+    height: 280px;
+    max-width: 240px;
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 4%;
+    display: flex;
+}
+
+.mapdiv {
+    height: 250px;
+    width: 25%;
+    border: 5px solid red;
+    background-color: maroon;
+    border-radius: 2%;
+    box-shadow: 2px 2px 23px 23px rgb(7, 20, 68);
+    margin-top: 50px;
+    margin-left: 3px;
+    align-items: center;
+    justify-items: center;
+    padding: 1px;
+}
+
+.map {
+    max-height: 250px;
+    max-width: 280px;
+    padding: 10px;
+    padding-bottom: 30px;
+    border: 2px solid red;
+    border-radius: 4%;
+    align-items: center;
+    margin-top: 80px;
+    box-shadow: 2px 2px 20px 20px yellow;
+    background-color: maroon;
+}
+
+.img2 {
+    height: 350px;
+    width: 80%;
+    padding-top: 200px;
+    border-radius: 50%;
+    padding-bottom: 25px;
+    padding-left: 40px;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #d32f2f;
+}
+
+.menudiv {
+    border: spx solid red;
+}
+
+.menu {
+    padding: 50px 20px;
+    text-align: center;
+    border: 5px solid red;
+}
+
+.menu h2 {
+    margin-bottom: 30px;
+}
+
+.menu-item {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(163, 160, 160);
+    border-radius: 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.button {
+    color: hsla(42, 94%, 48%, 0.968);
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.button:hover {
+    size: 10px;
+    cursor: pointer;
+    height: 40px;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    margin-bottom: 5px;
+}
+
+.menu-item p {
+    color: #8e0000fa;
+}
+
+.main-footer {
+  background-color: #222;
+  color: #eee;
+  padding: 40px 0 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  padding: 10px 20px;
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #ffcc00;
+  text-transform: uppercase;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 10px 0;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-column p {
+  line-height: 1.6;
+}
+
+.social-icons a img {
+  width: 30px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #999;
+}
+
+</style>
+</head>
+<body>
+    <header>
+       <center> <h1>WELCOME TO MY RESTAURANT G.P.TEKARI,GAYA</h1></center>
+        <h2> Sumit's Food Hub</h2>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#" target="_blank">Menu</a>
+        <a href="#">About</a>
+        <a href="E:\sumitresto3.html" target="_blank">Contact</a>
+    </nav>
+
+    <div class="inhero1">
+        <div class="imagediv"> <img src="C:\Users\HP\Desktop\SUMIT PHOTO.jpg" class="myimage"></div>
+        <div class="name"><span> My restaurant</span> is a special place that serves delicious and memorable food.</div>
+        <div class="right"><img class="img2" src="bae.jpeg"> </div>
+        <div class="child"> OWNER- SUMIT KUMAR</div>
+    </div>
+
+    <div class="menudiv">
+        <div class="menu">
+            <h3>Our Menu</h3>
+
+            <div class="menu-item">
+                <img src="E:\momoj.jpg" alt="Wow! Delicious Momos"> <h3>Momos&nbsp;&nbsp;&nbsp;&nbsp;&#x20b9 99</h3>
+                <a href="file:///E:/sumitresto2.html" target="_blank"> <button class="button">Order Now</button></a>
+                <p>Fresh and tasty momos.</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="E:\pizza2.jpg" alt="Wow! Samosa"><h3>Pizza&nbsp;&nbsp;&nbsp;&nbsp;&#x20b9 199</h3>
+                <a href="file:///E:/sumitresto2.html" target="_blank"> <button class="button">Order Now</button></a>
+                <p>Perfectly grilled pizza.</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="E:\chicken-curry2.jpg" alt="Chicken Curry"> <h3>Chicken Curry&nbsp;&nbsp;&nbsp;&nbsp;&#x20b9 149</h3>
+                <a href="file:///E:/sumitresto2.html" target="_blank"> <button class="button">Order Now</button></a>
+                <p>Rich and decadent chicken curry.</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="E:\berger.jpg" alt="Wow! Delicious Burger"> <h3>Burger&nbsp;&nbsp;&nbsp;&nbsp;&#x20b9 99</h3>
+                <a href="file:///E:/sumitresto2.html" target="_blank"> <button class="button">Order Now</button></a>
+                <p>Fresh and tasty burger.</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="E:\bred.jpg" alt="Wow! Bread"><h3>Bread&nbsp;&nbsp;&nbsp;&nbsp;&#x20b9 199</h3>
+                <a href="file:///E:/sumitresto2.html" target="_blank"> <button class="button"> Order Now </button></a>
+                <p>Perfectly grilled bread.</p>
+            </div>
+
+            <div class="menu-item">
+                <img src="E:\egg-biryani.jpg" alt="Egg Biryani"> <h3>Egg-Biryani&nbsp;&nbsp;&nbsp;&nbsp;&#x20b9 149</h3>
+                <a href="file:///E:/sumitresto2.html" target="_blank"> <button class="button">Order Now</button></a>
+                <p>Rich and decadent egg biryani.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--footer section-->
+
+
+
+    <footer class="main-footer">
+        <div class="footer-container">
+          <div class="footer-column">
+            <h4>About Us</h4>
+            <p>Sumit's Food Hub is your go-to destination for fresh, flavorful, and unforgettable food experiences. Located at GPTekari, Gaya.</p>
+          </div>
+      
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Gallery</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-column">
+            <h4>Contact Info</h4>
+            <p>📍 G.P. Tekari, Gaya, Bihar</p>
+            <p>📞 +91 9876543210</p>
+            <p>✉️ sumitresto@example.com</p>
+          </div>
+      
+          <div class="footer-column">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"><img src="facebook.jpg" alt="Facebook"></a>
+              <a href="#"><img src="insta.jpeg" alt="Instagram"></a>
+              <a href="#"><img src="E:\twiter" alt="Twitter"></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2025 Sumit's Food Hub. All rights reserved.</p>
+        </div>
+      </footer>
+      
+</body>
+</html>
